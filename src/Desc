@@ -1,0 +1,62 @@
+### Project: Student Management System
+
+#### **Project Overview:**
+Create a simple Student Management System that allows you to manage students' information, courses, and grades using the Kotlin concepts you’ve learned.
+The system should include features to add, update, and retrieve student data, as well as calculate the average grade for each student.
+
+#### **Requirements:**
+
+1. **Student Class:**
+   - Create a `Student` class that includes properties like `id`, `name`, `age`, and a list of courses the student is enrolled in.
+   - Use the `init` block to print a message when a new student is created.
+
+2. **Course Class:**
+   - Create a `Course` class that includes properties like `courseId`, `courseName`, and `grade`.
+   - Use an `enum class` to define a set of possible course types (e.g., MATH, SCIENCE, LITERATURE).
+
+3. **Getters and Setters:**
+   - Implement custom getters and setters for the `Student` class to control access to the `age` property, ensuring it is not set to a negative value.
+
+4. **lateinit:**
+   - Use `lateinit` for a property in the `Student` class that cannot be initialized immediately (e.g., an optional mentor property).
+
+5. **Companion Object:**
+   - Implement a companion object in the `Student` class to keep track of the total number of students created.
+
+6. **Singleton:**
+   - Create a `StudentDatabase` singleton object that stores and manages all the students. This class should provide methods to add, update, and retrieve students.
+
+7. **Lazy Initialization:**
+   - Use lazy initialization for a property in the `StudentDatabase` object, such as a list that only loads data from a file when it is first accessed.
+
+8. **Inner Class:**
+   - Implement an inner class within the `Student` class that represents the student's address with properties like `street`, `city`, and `zipCode`.
+
+9. **Inheritance:**
+   - Create a `GraduateStudent` class that inherits from the `Student` class and includes additional properties like `thesisTitle`.
+
+10. **Data Class:**
+    - Make the `Student` and `Course` classes data classes to automatically generate useful methods like `toString()` and `copy()`.
+
+#### **Collection Operations:**
+
+1. **List of Students:**
+   - Store all students in a `List` and use operations like filtering to find students above a certain age or in a specific course.
+
+2. **Mapping:**
+   - Use mapping to create a list of all student names.
+
+3. **Zipping:**
+   - Zip together two lists, such as a list of students and a list of their average grades.
+
+4. **Filtering:**
+   - Implement filtering to find all students enrolled in a specific type of course.
+
+5. **Flattening:**
+   - Flatten a list of lists, such as all the courses each student is enrolled in, into a single list of courses.
+
+#### **Bonus Features:**
+- Add functionality to calculate the average grade of a student based on the grades in their courses.
+- Implement a method in the `StudentDatabase` class to print a report of all students and their average grades.
+
+This project will allow you to apply and reinforce your understanding of the Kotlin concepts you've learned, providing a comprehensive and practical exercise.
